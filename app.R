@@ -24,9 +24,6 @@ ui <- pageWithSidebar(
     numericInput("ahead", "Months to Forecast Ahead:", 6, 36),
     submitButton("Update Forecast"),
     br(),
-    # img(src = "efa_logo.png", height = 144, width = 144),
-    #br(),
-    #br(),
     p("Developed by "),
     span("Manniti Luca", style = "color:blue"),
     #br(),
@@ -36,9 +33,11 @@ ui <- pageWithSidebar(
     h4("Time series forecast algorithm is based on ", a(href = "https://www.otexts.org/fpp/7", "exponential smoothing methods.")),
     dygraphOutput("etsForecastPlot"),
     br(),
+    strong("Confidence level = 80%", align="center"),
     h4("Normal forecast point estimates (mean) and prediction intervals (upper and lower) if you anticipate typical market behaviour:"),
     tableOutput("summary_80"),
     br(),
+    strong("Confidence level = 95%", align="center"),
     h4("Conservative forecast intervals if uncertainity is high:"),
     tableOutput("summary_95")
     ))
