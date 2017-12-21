@@ -2,11 +2,7 @@
 ## R project for kalinax assignment
 ---------------------------------
 
-#### The challenge: A worldwide shipping company hired us for a new project.	
-	
-**What they do?** 	
-
-They organize the transportation of people and goods. They operate from 3 operational bases and organize transportation (air or sea) to and from any part of the World.	
+### Description of problem
 	
 **Objective**	
 Through the financial data of the last 3 years (2014, 2015 and 2016) and Google Analytics (marketing) data they want to do a predictive analysis for the coming years.	
@@ -23,3 +19,29 @@ Users should be able to turn on/off and isolate the following dimensions:
 	
 This is a creative challenge! You can add anything you see that adds value to the client.	
 
+### How to run this R app
+
+The forecast is developed using the shiny library. In order to use and interact with the data follow the step below 
+
+- open R console from the parent directory of App-1  
+	```
+	> library(shiny)
+	> runApp("App-1")
+	```
+- A page with the running app should open on your browser 
+
+### Prerequisite
+
+In order to be able to run this App you need the following:
+- R 
+- library(dplyr)
+- library(zoo)
+- library(forecast)
+- library(lubridate)
+- library(dygraphs)
+- library(readxl)
+
+To install a package in R console: 
+```
+install.packages("package_name")
+```
