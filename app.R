@@ -30,7 +30,7 @@ ui <- pageWithSidebar(
     p("Developed by "),
     span("Manniti Luca", style = "color:blue"),
     #br(),
-    h6("Code: ", a(href = "https://github.com/mammykins/App-forecast", "Github"))),
+    h6("Code: ", a(href = "https://github.com/luchetto/kalinax-forecast", "Github"))),
    
   mainPanel(
     h4("Time series forecast algorithm is based on ", a(href = "https://www.otexts.org/fpp/7", "exponential smoothing methods.")),
