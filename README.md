@@ -23,10 +23,12 @@ This is a creative challenge! You can add anything you see that adds value to th
 
 The forecast is developed using the shiny library. In order to use and interact with the data follow the step below 
 
-- open R console from the parent directory of App-1  
+- download and unzip kalinax-forecast project
+
+- open R console from the parent directory of "kalinax-forecast" folder 
 	```
 	> library(shiny)
-	> runApp("App-1")
+	> runApp("kalinax-forecast")
 	```
 - A page with the running app should open on your browser 
 
